@@ -1,0 +1,78 @@
+{
+  "textques": [
+    "https://i.postimg.cc/pVqRt3VR/ques-1.png",
+    "https://i.postimg.cc/FsY5XRnV/ques-2.png",
+    "https://i.postimg.cc/Pqsk4jyz/ques-3.png",
+    "https://i.postimg.cc/6pGXn3rp/ques-4.png",
+    "https://i.postimg.cc/Kjs6gS4T/ques-5.png",
+    "https://i.postimg.cc/k4w3qtmf/ques-6.png",
+    "https://i.postimg.cc/yd74MywD/ques-7.png",
+    "https://i.postimg.cc/J0nwn47m/ques-8.png",
+    "https://i.postimg.cc/y8RMWGKJ/ques-9.png",
+    "https://i.postimg.cc/bN4Xyh7c/ques-10.png",
+    "https://i.postimg.cc/VNc3tFsK/ques-11.png",
+    "https://i.postimg.cc/tgt8NVYp/ques-12.png",
+    "https://i.postimg.cc/Y9rZnqWg/ques-13.png",
+    "https://i.postimg.cc/NFVnj6P7/ques-14.png",
+    "https://i.postimg.cc/hPzw3YfC/ques-15.png"
+  ],
+  "help1": {
+    "A": "https://i.postimg.cc/1zz25Fn7/help1-A.png",
+    "B": "https://i.postimg.cc/Y95s3yXT/help1-B.png",
+    "C": "https://i.postimg.cc/nzjWqt1v/help1-C.png",
+    "D": "https://i.postimg.cc/x8LFFyh8/help1-D.png"
+  },
+  "help3": {
+    "A": "https://i.postimg.cc/tg474bzh/help3-A.png",
+    "B": "https://i.postimg.cc/tgvJ1cr8/help3-B.png",
+    "C": "https://i.postimg.cc/HxJxbtRn/help3-C.png",
+    "D": "https://i.postimg.cc/G2ZpKynQ/help3-D.png"
+  },
+  "winner": [
+    "https://i.postimg.cc/85mzfbT2/lv1.png",
+    "https://i.postimg.cc/KcQYZQqL/lv2.png",
+    "https://i.postimg.cc/43tdsgqN/lv3.png",
+    "https://i.postimg.cc/qRT77FHc/lv4.png",
+    "https://i.postimg.cc/d3Qt2T1L/lv5.png",
+    "https://i.postimg.cc/02QyrmF4/lv6.png",
+    "https://i.postimg.cc/5yP9nNYp/lv7.png",
+    "https://i.postimg.cc/bvQz4RSZ/lv8.png",
+    "https://i.postimg.cc/rwRyNT8C/lv9.png",
+    "https://i.postimg.cc/1zxmWdXx/lv10.png",
+    "https://i.postimg.cc/0QP8vJ7c/lv11.png",
+    "https://i.postimg.cc/brvpDcCn/lv12.png",
+    "https://i.postimg.cc/fLCMRTKZ/lv13.png",
+    "https://i.postimg.cc/D0YF1jHM/lv14.png",
+    "https://i.postimg.cc/Kc9ZXjjD/lv15.png"
+  ],
+  "info": [
+    "https://i.postimg.cc/bdXGDWYz/info-0.png",
+    "https://i.postimg.cc/JhKB6pxq/info-1.png",
+    "https://i.postimg.cc/MTFfxXhf/info-2.png",
+    "https://i.postimg.cc/ZYXjxqCq/info-3.png",
+    "https://i.postimg.cc/bJJSK1Fj/info-4.png",
+    "https://i.postimg.cc/pr5hdRHG/info-5.png",
+    "https://i.postimg.cc/Kc1JTTcV/info-6.png",
+    "https://i.postimg.cc/K8DNbrQK/info-7.png",
+    "https://i.postimg.cc/3RdCgMhp/info-8.png",
+    "https://i.postimg.cc/Px9by6f7/info-9.png",
+    "https://i.postimg.cc/fydcrxJR/info-10.png",
+    "https://i.postimg.cc/8P8Brn0J/info-11.png",
+    "https://i.postimg.cc/9QCdLwVc/info-12.png",
+    "https://i.postimg.cc/yNNFHqk5/info-13.png",
+    "https://i.postimg.cc/5y8z3bRH/info-14.png",
+    "https://i.postimg.cc/HWMbH9kp/info-15.png",
+  ],
+  "Cfalse": {
+    "A": "https://i.postimg.cc/HWNg2BW0/false-A.png",
+    "B": "https://i.postimg.cc/fyVhs0C0/false-B.png",
+    "C": "https://i.postimg.cc/8cxgzPXX/false-C.png",
+    "D": "https://i.postimg.cc/26cfgxQD/false-D.png"
+  },
+  "Ctrue": {
+    "A": "https://i.postimg.cc/0QqfPgCG/true-A.png",
+    "B": "https://i.postimg.cc/526pmS0z/true-B.png",
+    "C": "https://i.postimg.cc/FH8pCkdB/true-C.png",
+    "D": "https://i.postimg.cc/DzGg9f1y/true-D.png"
+  }
+}
