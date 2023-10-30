@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Rainbow Code</title>
+  <style>
+    body {
+      background-image: linear-gradient(30deg, #46daff, #ff8de2);
+      max-width: 100vw;
+    }
+    .options {
+      height: 15vh;
+      margin: auto;
+      display: flex;
+      margin-top: 5vh;
+    }
+    textarea {
+      width: 100%;
+      height: 70vh;
+    }
+    a, select {
+      font-family: "Ariel";
+      font-size: 20px;
+    }
+    #langs, #gradients, #themes, #shadow {
+      margin-left: 5%;
+    }
+    #button {
+      height: 5vh;
+      color: white;
+      font-size: 20px;
+      margin: auto;
+      display: block;
+      background-image: linear-gradient(120deg, #69077c, #ff27c9);
+    }
+    .checkbox {
+      margin-left: 5px;
+      display: none;
+	    border-radius: 50%;
+    }
+    .checkbox + label {
+      margin-left: 5px;
+      display: block;
+      width: 30px;
+      height: 30px;
+      border: 1px solid black;
+      cursor: pointer;
+      border-radius: 50%;
+      background-color: white;
+    }
+    .checkbox:checked + label {
+      margin-left: 5px;
+      background-color: #00eeff;
+    }
+    #shadow {
+      display: flex;
+    }
+  </style>
+</head>
+<body>
+  <div class="options">
+    <div id="langs">
+      <a>Ngôn ngữ: </a>
+      <select id="language">
+        <option disabled selected value="null">select</option>
+        <option value="batch">Batch</option>
+        <option value="c">C</option>
+        <option value="csharp">C#</option>
+        <option value="cpp">C++</option>
+        <option value="css">CSS</option>
+        <option value="git">Git</option>
+        <option value="html">HTML</option>
+        <option value="java">Java</option>
+        <option value="javascript">JavaScript</option>
+        <option value="json">JSON</option>
+        <option value="kotlin">Kotlin</option>
+        <option value="nix">Nix</option>
+        <option value="nsis">NSIS</option>
+        <option value="objectivec">Objective-C</option>
+        <option value="pascal">Pascal</option>
+        <option value="php">PHP</option>
+        <option value="python">Python</option>
+        <option value="ruby">Ruby</option>
+        <option value="typescript">TypeScript</option>
+      </select>
+    </div>
+    <div id="gradients">
+      <a>Gradient: </a>
+      <select id="gradient-frame">
+        <option disabled selected value="null">select</option>
+        <option value="1" style="background-image: linear-gradient(90deg, #69077c, #ff27c9)">#69077c-#ff27c9</option>
+        <option value="2" style="background-image: linear-gradient(90deg, #69077c, #ff27c9)">#69077c-#ff27c9</option>
+        <option value="3" style="background-image: linear-gradient(90deg, #69077c, #ff27c9)">#69077c-#ff27c9</option>
+      </select>
+    </div>
+    <div id="themes">
+      <a>Chủ đề: </a>
+      <select id="highlight-theme">
+        <option disabled selected value="null">select</option>
+        <option value="cobalt">Cobalt</option>
+        <option value="dracula">Dracula</option>
+        <option value="github">Github</option>
+        <option value="gruvbox-dark">Gruvbox Dark</option>
+        <option value="gruvbox-light">Gruvbox Light</option>
+        <option value="monokai">Monokai</option>
+        <option value="solarized-dark">Solarized Dark</option>
+        <option value="solarized-light">Solarized Light</option>
+        <option value="tomorrow">Tomorrow</option>
+        <option value="tomorrow-night">Tomorrow Night</option>
+        <option value="tomorrow-night-blue">Tomorrow Night Blue</option>
+        <option value="tomorrow-night-bright">Tomorrow Night Bright</option>
+      </select>
+    </div>
+    <div id="shadow">
+      <a>Đổ bóng code: </a>
+      <input type="checkbox" class="checkbox" id="square" />
+      <label for="square" ></label>
+    </div>
+  </div>
+
+  <textarea id="codeInput" placeholder="Paste your code here..."></textarea>
+
+  <br>
+  <button id="button" onclick="convert()">Tạo ảnh</button>
+
+  <div id="output"></div>
+
+  <script>
+    function convert() {
+      const code = document.getElementById('codeInput').value;
+      const lang = document.getElementById('language').value;
+      const gradient = document.getElementById('gradient-frame').value;
+      const theme = document.getElementById('highlight-theme').value;
+
+      if(!code) {
+        alert("Vui lòng dán code của bạn!");
+        return;
+      }
+      if(lang == "null") {
+        alert("Vui lòng chọn ngôn ngữ!");
+        return;
+      }
+      if(gradient == "null") {
+        alert("Vui lòng chọn gradient!");
+        return;
+      }
+      if(theme == "null") {
+        alert("Vui lòng chọn chủ đề!");
+        return;
+      }
+
+      var checkbox = document.getElementById("square");
+      var shadow = checkbox.checked ? true : false;
+
+      fetch('https://api.hpos6wtihnqgkz6.repl.co', {
+        method: 'post',
+        body: JSON.stringify({
+          code: code,
+          lang: lang,
+          gradient: gradient,
+          theme: theme,
+          shadow: shadow
+        }),
+        headers: {
+          'content-type': 'application/json'
+        }
+      }).then(async res=>{
+        document.getElementById('output').innerHTML = await res.text();
+      });
+    }
+  </script>
+</body>
+</html>
